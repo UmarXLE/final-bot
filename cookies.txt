@@ -1,11 +1,7 @@
-from yt_dlp import YoutubeDL
+# Netscape HTTP Cookie File
+# http://curl.haxx.se/rfc/cookie_spec.html
+# This is a generated file!  Do not edit.
 
-ydl_opts = {
-    'format': 'best',
-    'cookies': 'cookies.txt',  # 🔥 Добавь этот параметр
-    'outtmpl': 'downloads/%(title)s.%(ext)s',
-    # другие настройки...
-}
-
-with YoutubeDL(ydl_opts) as ydl:
-    info = ydl.extract_info(video_url, download=True)
+.youtube.com	TRUE	/	FALSE	1780664904	HSID	AEufC3hlZGh2klPiL
+.youtube.com	TRUE	/	TRUE	1780664904	SSID	AUs8KsKOQG_y6fuxP
+...
