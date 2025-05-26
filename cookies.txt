@@ -1,0 +1,11 @@
+from yt_dlp import YoutubeDL
+
+ydl_opts = {
+    'format': 'best',
+    'cookies': 'cookies.txt',  # 🔥 Добавь этот параметр
+    'outtmpl': 'downloads/%(title)s.%(ext)s',
+    # другие настройки...
+}
+
+with YoutubeDL(ydl_opts) as ydl:
+    info = ydl.extract_info(video_url, download=True)
